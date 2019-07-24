@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+
+<style>
+ 
+
+.main
+{
+background-color:Orange;
+color:white; 
+ text-align:center;
+}
+
+.textval1{
+padding-left:10px;
+padding-right:10px;
+margin-top:30px;
+margin-bottom:50px;
+}
+
+.textval{
+margin-top:20px;
+}
+
+</style>
+</head>
+<body>
+ <div  class="main">
+ 
+ 
+ 
+ <h2> Enter  informtion here</h2> 
+<form action ="server.php" method = "post" onsubmit = ""> 
+ Seller Name:
+ <input type="text" name = "name"  class="textval" value="" required><br>
+
+  City
+ <input type="text" name = "city" class="textval"  value="" required><br>
+ Address
+ <input type="text" name = "address" class="textval" value="" required><br>
+  
+ Phone Number
+
+  <input  id="phone" name="phone_number"
+       placeholder="123-765-9876 OR (123)123-8765" pattern="[0-9]{3}|?\({3}\)?-[0-9]{3})-[0-9]{4}$" required;
+       required>
+
+ 
+  Email Address
+  <input type="email" name = "email" class="textval" name="emailname" value="" required><br>
+ 
+  
+ 
+ Vehicle Make
+ <input type="text" name = "make" class="textval" value="" required> 
+ Vehicle Model
+ <input type="text" name = "model" class="textval" value="" required>
+ 
+ Vehicle Year
+  <input type="text" name = "year" class="textval" value="" required>
+
+  <br />
+ 
+ <br>
+ <input type="submit" name="submit"  value="Submit" />
+ </form>
+ </div>
+ 
+
+
+ 
+</body> 
+</html>        
